@@ -13,11 +13,13 @@ nav {
     align-items: center;
     border-bottom: 2px solid white;
     transition: 0.5s all;
+    min-width: 100vw;
 }
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 10fr;
+    grid-template-columns: 1fr 1fr 1fr 10fr;
     margin: 0px;
+    justify-items: center;
 }
 
 nav li {
@@ -119,7 +121,18 @@ nav li:hover {
     margin-left: 150px;
     align-items: center;
 }
-
+#button {
+    opacity: 0;
+    transition: .5s all;
+}
+#button img {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+#button img:hover {
+    cursor: pointer;
+}
 footer {
     background-color: black;
     min-width: 100%;
