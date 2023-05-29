@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+h1 {
+    display: inline-block;
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
+#logo img {
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(1);
+}
+#logo-text p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+#logo-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo {
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+    background-color: black;
+}
+#main {
+    padding-bottom: 250px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+#content {
+    margin: 50px;
+}
+#content-box {
+    padding: 20px 10px 20px 10px;
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 0px 0px 0px 20px;
+    background-color: white;
+    transition: .5s all;
+}
+#content-box:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px black;
+    transform: scale(1.1);
+}
+body {
+    background-image: url("https://www.onlygfx.com/wp-content/uploads/2021/04/white-triangle-pattern-seamless-background-2.jpg");
+    background-size: 500px 400px;
+    margin: 0;
+}
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+#box-title {
+    font-weight: bold;
+}
+#box-image img {
+    height: 100px;
+}
+#box-image {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+menu {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px solid white;
+}
+menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 10fr;
+    margin: 0px;
+}
+menu li {
+    text-align: center;
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+menu li:hover {
+    background-color: #4f4f4f;
+    color: #f0dfdf;
+    cursor: pointer;
+}
+#admin-button {
+    justify-self: end;
+    left: 0px;
+    width: 50px;
+    display: inline-block;
+    margin-right: 50px;
+}
+#admin-button a {
+    color: white;
+    text-decoration: none;
+}
+#rubric a {
+    color: black;
+    justify-self: end;
+}
+
+#rubric {
+    background-color: white;
+    min-height: 100vh;
+}
+#rubric a {
+    text-decoration: none;
+}
+#rubric ul {
+    margin: 50px 10px 10px 10px;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#rubric li {
+    border-bottom: 1px solid linear-gradient(black, black, black);
+    padding: 10px;
+}
+
+
+#rubric li:hover {
+    background: linear-gradient(-90deg, white, white, black);
+    background-size: 400% 400%;
+    cursor: pointer;
+    color: white;
+    animation: gradient .5s forwards;
+}
+#rubric li:hover a {
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        /*background: linear-gradient(-90deg, white, white);*/
+        background-position: 100% 0%;
+    }
+    100% {
+        /*background: linear-gradient(-90deg, black, black);*/
+        background-position: 0% 100%;
+    }
+}
+
+footer {
+    min-width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    height: 250px;
+}
+
+#footer {
+    display: grid;
+    margin: 20px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
