@@ -2,5 +2,8 @@
 {% block content %}
 <div id='news' style="text-align: center">
     <h1 style="color: #1b1b1b">Типа новости</h1>
+    {% for bb in bbs %}
+        {{ bb.title_and_price }}
+    {% endfor %}
 </div>
 {% endblock %}
