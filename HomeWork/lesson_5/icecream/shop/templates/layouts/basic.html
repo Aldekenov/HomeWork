@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'shop/style.css' %}">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
+<script src="{% static 'shop/script.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<div id='page'>
+    <div id="logo">
+        <img style="width: 80px" src="https://cdn3.iconfinder.com/data/icons/iconpark-vol-6/48/icecream-four-256.png">
+        <div id='logo-text'>
+            <h1>ICECREAM SHOP</h1><br>
+            <p>Мороженое всех сортов оптом и в розницу</p>
+        </div>
+    </div>
+    <menu>
+        <ul>
+            <a href="{% url 'index' %}"><li>Главная</li></a>
+            <li>Добавить</li>
+            <li>Где-то</li>
+            <li>Скем-то</li>
+            <li>Когда-то</li>
+            <li id='admin-button'><a href="/admin">Войти</a></li>
+        </ul>
+    </menu>
+    <div id='content'>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <div id='footer'>
+            <div id='col-1'>
+                <p>Позвоните нам по телефону:</p>
+                <p>8 (7172) 77-77-77</p>
+            </div>
+            <div id='col-2'>
+                <p><a href="{% url 'index' %}">Главная</a></p>
+                <p>Добавить</p>
+                <p>Где-то</p>
+                <p>Скем-то</p>
+                <p>Когда-то</p>
+            </div>
+            <div id='col-3'>
+                <img style="width: 100px; filter: invert(1);" src="https://cdn3.iconfinder.com/data/icons/iconpark-vol-6/48/icecream-four-256.png">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
