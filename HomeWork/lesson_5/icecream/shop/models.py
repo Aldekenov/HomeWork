@@ -4,7 +4,7 @@ class Page(models.Model):
     number = models.CharField(max_length=20, db_index=True, verbose_name='Номер')
 
     def __str__(self):
-        return self.name
+        return self.number
 
     class Meta:
         verbose_name_plural = 'Страница'

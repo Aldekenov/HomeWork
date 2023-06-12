@@ -1,1 +1,12 @@
 {% extends 'layouts/basic.html' %}
+{% block content %}
+{% for bb in ic %}
+<div id='content-box'>
+    <div id='box-image'><img src="/media/{{ bb.img }}" /></div>
+    <h2>{{ bb.titlr }}</h2>
+    <span id='box-title'>Модель: </span><span id='box-input'>{{ bb.content }}</span><br>
+    <span id='box-title'>Цена: </span><span id='box-input'>{{ bb.price }}</span><br>
+    <span id='box-title'>Время регистрации: </span><span id='box-input'>{{ bb.published|date:"d.m.Y" }}</span>
+</div>
+{% endfor %}
+{% endblock %}

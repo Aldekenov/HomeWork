@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'bboard/style.css' %}">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
+<script src="{% static 'bboard/script.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>FI.kz: {% block title %}Главная{% endblock %}</title>
+</head>
+<body>
+<div id='page'>
+    <div id="logo">
+        <img style="width: 100px" src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Fiverr-Outline-256.png">
+        <div id='logo-text'>
+            <h1>Fignya.kz</h1><br>
+            <p>Тут продается все ненужное</p>
+        </div>
+    </div>
+    <menu>
+        <ul>
+            <a href="{% url 'index' %}"><li>Главная</li></a>
+            <a href="{% url 'add' %}"><li>Добавить</li></a>
+            <li>Где-то</li>
+            <li>Скем-то</li>
+            <li>Когда-то</li>
+            <li id='admin-button'><a href="/admin">Войти</a></li>
+        </ul>
+    </menu>
+    <main id='main'>
+
+        <div id='rubric'>
+            <ul>
+                <h3>Рубрики</h3>
+                {% for rubric in rub %}
+                <li><a href="{% url 'by_rubric' rubric.pk %}"> {{ rubric.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id='content'>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <div id='footer'>
+            <div id='col-1'>
+                <p>Позвоните нам по телефону:</p>
+                <p>8 (7172) 77-77-77</p>
+            </div>
+            <div id='col-2'>
+                <p><a href="{% url 'index' %}">Главная</a></p>
+                <p><a href="{% url 'add' %}">Добавить</a></p>
+                <p>Где-то</p>
+                <p>Скем-то</p>
+                <p>Когда-то</p>
+            </div>
+            <div id='col-3'>
+                <img style="width: 100px; filter: invert(1);" src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Fiverr-Outline-256.png">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
