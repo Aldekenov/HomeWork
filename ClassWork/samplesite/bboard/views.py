@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Bb, Rubric
 from django.template import loader
 from .forms import BbForm
@@ -44,3 +44,15 @@ def by_rubric(request, rubric_id):
     current_rubric = Rubric.objects.get(pk=rubric_id)
     context = {'bbs':bbs, 'rub':rub, 'current_rubric':current_rubric}
     return render(request, 'bboard/by_rubric.html', context)
+
+def create_rubric(request):
+    if request.method == 'POST':
+        post = request.POST
+        rubric = Rubric(name = post['name'])
+
+        rubric.save()
+
+        return HttpResponseRedirect('/')
+    else:
+        template = loader.get_template('bboard/createrubric.html')
+        return HttpResponse(template.render({}, request))

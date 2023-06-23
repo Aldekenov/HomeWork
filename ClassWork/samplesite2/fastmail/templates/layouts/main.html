@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'fastmail/style.css' %}">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
+<script src="{% static 'fastmail/script.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>FI.kz: Главная</title>
+</head>
+<body>
+<div id='page'>
+    <menu>
+        <ul>
+            <li>FASTMAIL</li>
+            <li>Главная</li>
+            <li>Добавить</li>
+            <li>Где-то</li>
+            <li>Скем-то</li>
+            <li>Когда-то</li>
+        </ul>
+    </menu>
+    <div id="logo">
+        <img style="width: 50px" src="https://cdn4.iconfinder.com/data/icons/doodle-4/158/send-256.png">
+        <div id='logo-text'>
+            <h1>fastmail.kz</h1><br>
+            <p>Быстрее чем ты, тормоз!</p>
+        </div>
+    </div>
+    <main id='main'>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+    <footer>
+        <div id='footer'>
+            <div id='col-1'>
+                <p>Позвоните нам по телефону:</p>
+                <p>8 (7172) 77-77-77</p>
+            </div>
+            <div id='col-2'>
+
+            </div>
+            <div id='col-3'>
+                <img style="width: 50px; filter: invert(1);" src="https://cdn4.iconfinder.com/data/icons/doodle-4/158/send-256.png">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comforter&family=Geologica:wght@100&display=swap');
+
+h1 {
+    display: inline-block;
+    font-family: 'Geologica', sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+#logo img {
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(1);
+    margin-right: 10px;
+}
+#logo-text p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+#logo-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo {
+    text-align: left;
+    vertical-align: middle;
+    background-color: #b02bb3;
+    padding: 10px 0px 10px 50px;
+}
+#main {
+    padding-bottom: 250px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+body {
+    margin: 0;
+}
+
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+
+menu {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+}
+menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 15fr;
+    margin: 0px;
+    padding: 0;
+}
+menu li {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+menu li:hover {
+    background-color: #4f4f4f;
+    color: #f0dfdf;
+    cursor: pointer;
+}
+#admin-button {
+    justify-self: end;
+    left: 0px;
+    width: 50px;
+    display: inline-block;
+    margin-right: 50px;
+}
+#admin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    min-width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+#footer {
+    display: grid;
+    margin: 20px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
