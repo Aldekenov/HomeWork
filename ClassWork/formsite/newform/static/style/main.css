@@ -11,6 +11,7 @@ a {
     margin: 0;
     font-size: 30px;
     color: white;
+    font-weight: bold;
 }
 #logo img {
     display: inline-block;

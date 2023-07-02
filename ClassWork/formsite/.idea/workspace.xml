@@ -2,14 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102bee4b-2ef0-48e8-b140-f38229064b8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newform/static/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newform/templates/layouts/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newform/templates/newform/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newform/static/style/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newform/templates/newform/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/formsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/formsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/formsite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/static/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/templates/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newform/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -25,9 +43,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager">
@@ -37,6 +58,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="formsite.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -64,10 +86,22 @@
       <option name="presentableId" value="Default" />
       <updated>1687533454993</updated>
       <workItem from="1687533456432" duration="17000" />
+      <workItem from="1688137615297" duration="2635000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

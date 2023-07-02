@@ -21,3 +21,9 @@ class InfoCreateView(CreateView):
         context = super().get_context_data(**kwargs)
         context['lesson'] = Lesson.objects.all()
         return context
+
+def history(request):
+    template = loader.get_template('newform/history.html')
+    txt = Info.objects.order_by('lesson')
+    context = {'txt': txt}
+    return HttpResponse(template.render(context, request))

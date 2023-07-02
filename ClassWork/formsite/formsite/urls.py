@@ -16,12 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from newform.views import index, InfoCreateView
+from newform.views import *
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+    path('history/', history, name='history'),
     path('add/', InfoCreateView.as_view(), name='add'),
     path('admin/login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
 ]
