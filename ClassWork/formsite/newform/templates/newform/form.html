@@ -2,12 +2,13 @@
 {% block content %}
     {% load static %}
     <link rel="stylesheet" href="{% static 'style/form.css' %}">
+    <script src="{% static 'script/form.js' %}"></script>
     <h1 id="form-text"> Форма обратной связи</h1>
     <div id="box">
         <form id="form" method="post" action="">
             {% csrf_token %}
             {{form.as_p}}
-            <input type="submit" value="добавить">
+            <input type="submit" id="submit-button" value="ОТПРАВИТЬ">
         </form>
     </div>
 {% endblock %}

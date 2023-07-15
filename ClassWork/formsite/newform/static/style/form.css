@@ -1,9 +1,43 @@
 #box {
-    margin: 50px 100px 50px 100px;
+    margin: 0px 100px 50px 100px;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 10px #cfd7ff;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 20px;
 }
 
 #form-text {
-    margin-left: 100px;
+    margin: 50px 0 20px 150px;
     font-family: 'Roboto', sans-serif;
+}
+
+input, select {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    width: 250px;
+}
+label {
+    width: 250px;
+    display: inline-block;
+}
+textarea {
+    outline: none;
+    border: 1px solid lightgray;
+    width: 250px;
+}
+#submit-button {
+    background-color: #96a8ff;
+    height: 35px;
+    width: 100%;
+    margin: 50px 0 0 0;
+    font-weight: bold;
+    color: white;
+}
+#submit-button:hover {
+    cursor: pointer;
+    background-color: #cfd7ff;
 }

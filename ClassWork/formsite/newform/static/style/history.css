@@ -1,8 +1,27 @@
-
+#form-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#content {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid grey;
+}
 th {
-   border: 1px solid grey;
+    height: 30px;
+    border: 1px solid grey;
 }
 td {
-   border: 1px solid grey;
     width: 200px;
+    text-align: center;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: 30px;
+}
+#content tr:nth-child(odd) {
+  background-color: #96a8ff;
+}
+
+#content tr:nth-child(even) {
+  background-color: #cfd7ff;
 }

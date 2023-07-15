@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102bee4b-2ef0-48e8-b140-f38229064b8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newform/static/style/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newform/templates/newform/history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/formsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/formsite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newform/static/script/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newform/static/script/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/formsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/static/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/static/style/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/static/style/history.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/history.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newform/templates/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/newform/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/templates/newform/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/newform/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/templates/newform/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/newform/history.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,16 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="formsite" type="Python.DjangoServer" factoryName="Django server">
       <module name="formsite" />
@@ -87,6 +87,7 @@
       <updated>1687533454993</updated>
       <workItem from="1687533456432" duration="17000" />
       <workItem from="1688137615297" duration="2635000" />
+      <workItem from="1689173954942" duration="3650000" />
     </task>
     <servers />
   </component>
