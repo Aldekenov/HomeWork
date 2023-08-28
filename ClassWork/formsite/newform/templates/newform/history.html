@@ -2,11 +2,13 @@
 {% block content %}
     {% load static %}
     <link rel="stylesheet" href="{% static 'style/history.css' %}">
+    <script src="{% static 'script/history.js' %}"></script>
     <h1 id="form-text">Список студентов</h1>
     <div id="box">
         <table id="content">
             <tr>
                 <th>Курс обучения</th>
+                <th>Имя</th>
                 <th>Имя</th>
                 <th>Фамилия</th>
                 <th>Год рождения</th>
@@ -16,10 +18,11 @@
             {% for tx in txt %}
             <tr>
                 <td>{{ tx.lesson }}</td>
+                <td>{{ tx.pk }}</td>
                 <td>{{ tx.name }}</td>
                 <td>{{ tx.surname }}</td>
                 <td>{{ tx.birthday }}</td>
-                <td>{{ tx.number }}</td>
+                <td id="ph_num">{{ tx.number }}</td>
                 <td>{{ tx.comment }}</td>
             </tr>
             {% endfor %}

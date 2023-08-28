@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102bee4b-2ef0-48e8-b140-f38229064b8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newform/static/script/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newform/static/script/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newform/static/script/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/static/style/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/static/style/history.css" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/style/history.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newform/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newform/static/script/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/script/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newform/templates/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/templates/newform/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/newform/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newform/templates/newform/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/newform/history.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
 }</component>
   <component name="RunManager">
@@ -88,6 +86,10 @@
       <workItem from="1687533456432" duration="17000" />
       <workItem from="1688137615297" duration="2635000" />
       <workItem from="1689173954942" duration="3650000" />
+      <workItem from="1689606051921" duration="3329000" />
+      <workItem from="1689776737678" duration="5904000" />
+      <workItem from="1693233104221" duration="357000" />
+      <workItem from="1693233500207" duration="116000" />
     </task>
     <servers />
   </component>
