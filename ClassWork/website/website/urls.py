@@ -18,10 +18,18 @@ from django.contrib import admin
 from django.urls import path, include
 from bboard.views import *
 from users.views import *
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 urlpatterns = [
     path('', index, name='index'),
+    path('students/', students, name="students"),
     path('user/', include('users.urls')),
     path('bboard/', include('bboard.urls')),
     path('admin/', admin.site.urls),
+    path('post/<int:post_id>/', posts, name='posts'),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]

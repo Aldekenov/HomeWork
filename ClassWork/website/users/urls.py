@@ -26,7 +26,7 @@ urlpatterns = [
     path('auth/', auth_view, name="auth"),
     path('logout/', logout_view, name="logout"),
     path('grappelli/', include('grappelli.urls')),
-    path('admin/', admin.site.urls),
+    path('active-profiles/', NotBannedProfilesList.as_view()),
 ]
 
 if settings.DEBUG:

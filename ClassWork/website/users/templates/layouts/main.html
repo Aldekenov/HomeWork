@@ -37,6 +37,9 @@
         </div>
         <div id="admin-button">
             {% if user.is_authenticated %}
+                {% for us in usr %}
+                    {{ us.user }}
+                {% endfor %}
                 <a href="{% url 'logout' %}">ВЫЙТИ</a>
             {% else %}
                 <p><a href="{% url 'login' %}">ВОЙТИ</a></p>

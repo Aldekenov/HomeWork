@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+#news {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#pub-box {
+    border: 1px solid black;
+    display: grid;
+    margin: 20px 5px 0px 5px;
+    height: 430px;
+    grid-template-rows: min-content auto 20px;
+}
+
+#pub-title {
+    background-color: #96a8ff;
+    width: 300px;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+}
+
+#pub-text {
+    width: 300px;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    font-size: 14px;
+    text-align: left;
+}
+#pub-text::-webkit-scrollbar {
+  width: 0;
+}
+
+#pub-info {
+    display: grid;
+    background-color: lightgray;
+    font-size: 12px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding: 0 5px 0 5px;
+    align-items: center;
+}

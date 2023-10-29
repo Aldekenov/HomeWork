@@ -1,0 +1,24 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+    {% load static %}
+    {% load custom_tags %}
+    <link rel="stylesheet" href="{% static 'style/posts.css' %}">
+    <div style="text-align: center">
+        <div id="publish">
+                <div id="pub-title">
+                    {{ post.title }}
+                </div>
+                <div id="pub-text">
+                    {% censor post.text %}
+                </div>
+        </div>
+        <div id="comment">
+            {% for com in comments %}
+                <div id="com">
+                    <span>{{ com.user }}</span>
+                    <span>{% censor com.text %}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

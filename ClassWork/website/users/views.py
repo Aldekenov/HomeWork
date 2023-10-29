@@ -4,6 +4,12 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.template import loader
 from .models import *
+from users.models import Profile
+from django.http import Http404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework import serializers
 
 def login_view(request):
     if request.POST:
@@ -40,3 +46,24 @@ def auth_view(request):
 def logout_view(request):
     logout(request)
     return render(request, 'users/login.html', {})
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = '__all__'
+
+
+
+class ProfileSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+
+    class Meta:
+        model = Profile
+        fields = '__all__'
+
+class NotBannedProfilesList(APIView):
+    def get(self, request, format=None):
+        profiles = Profile.objects.filter(is_banned=False)
+        serializer = ProfileSerializer(profiles, many=True)
+        return Response(serializer.data)

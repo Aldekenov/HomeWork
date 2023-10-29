@@ -2,8 +2,22 @@
 {% block content %}
     {% load static %}
     <link rel="stylesheet" href="{% static 'style/index.css' %}">
-
-    <div id='news' style="text-align: center">
-
+    <div style="text-align: center">
+        <div id='news'>
+            {% for pu in pub %}
+                <div id="pub-box">
+                    <div id="pub-title">
+                            <a href="{% url 'posts' pu.id %}">{{ pu.title }}</a>
+                    </div>
+                    <div id="pub-text">
+                        {{ pu.text }}
+                    </div>
+                    <div id="pub-info">
+                        <span style="text-align: left">{{ pu.user }}</span>
+                        <span style="text-align: right">{{ pu.published }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
