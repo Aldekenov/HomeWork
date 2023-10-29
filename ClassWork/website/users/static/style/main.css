@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comforter&family=Geologica:wght@100&display=swap');
+a {
+    text-decoration: none;
+    color: white;
+}
+#logo h1 {
+    display: inline-block;
+    font-family: 'Geologica', sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+#logo img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    mix-blend-mode: multiply;
+}
+#logo-text p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+#logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    display: inline-block;
+}
+#admin-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+#admin-button:hover {
+    cursor: pointer;
+    color: darkblue;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+    height: 30px;
+}
+#search input {
+    width: 500px;
+    height: 25px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+#search img {
+    width: 25px;
+    outline: none;
+}
+#search img:hover {
+    cursor: pointer;
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #96a8ff;
+    padding: 10px 0px 10px 50px;
+}
+#main {
+    padding-bottom: 250px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+
+menu {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+}
+menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 15fr;
+    margin: 0px;
+    padding: 0;
+}
+menu li {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+menu li:hover {
+    background-color: #4f4f4f;
+    color: #f0dfdf;
+    cursor: pointer;
+}
+#admin-button {
+    justify-self: end;
+    left: 0px;
+    width: 50px;
+    display: inline-block;
+    margin-right: 50px;
+}
+#admin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    min-width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+#footer {
+    display: grid;
+    margin: 20px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#user-menu {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    right: 20px;
+    top: 100px;
+    border: 1px solid #96a8ff;
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden;
+}
+#user-menu p {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+#user-menu p:hover {
+    background-color: #96a8ff;
+    cursor: pointer;
+}

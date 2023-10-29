@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'style/main.css' %}">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/jquery.validate.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
+<script src="{% static 'script/main.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>ITStep: Форма</title>
+</head>
+<body>
+<div id='page'>
+    <menu>
+        <ul>
+            <li style="color: #96a8ff">ITSTEP</li>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'students' %}">Ученики</a></li>
+            <li>Достижения</li>
+            <li>Форма</li>
+            <li>Контакты</li>
+        </ul>
+    </menu>
+    <div id="logo">
+        <span>
+            <img style="width: 50px" src="https://meet-and-code.org/kz/kz/event-downloads/3567/">
+            <div id='logo-text'>
+                <h1>STEP</h1><br>
+                <p>IT ACADEMY</p>
+            </div>
+        </span>
+        <div id="search">
+            <input type="text" placeholder="поиск по сайту">
+            <img src="https://cdn2.iconfinder.com/data/icons/user-interface-169/32/search-256.png">
+        </div>
+        <div id="admin-button">
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">ВЫЙТИ</a>
+            {% else %}
+                <p><a href="{% url 'login' %}">ВОЙТИ</a></p>
+            {% endif %}
+        </div>
+
+    <div id="user-menu">
+        <p>Мой аккаунт</p>
+        <p>Мои задания</p>
+        <p>Настройки</p>
+        <p>Выйти</p>
+    </div>
+
+    </div>
+    <main id='main'>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+    <footer>
+        <div id='footer'>
+            <div id='col-1'>
+                <p>Позвоните нам по телефону:</p>
+                <p>8 (7172) 77-77-77</p>
+            </div>
+            <div id='col-2'>
+
+            </div>
+            <div id='col-3'>
+                <img style="width: 50px; filter: invert(1);" src="https://cdn4.iconfinder.com/data/icons/doodle-4/158/send-256.png">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102bee4b-2ef0-48e8-b140-f38229064b8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/newform/static/script/history.js" afterDir="false" />
+    <list default="true" id="102bee4b-2ef0-48e8-b140-f38229064b8a" name="Changes" comment="last_one">
+      <change afterPath="$PROJECT_DIR$/../website/bboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/static/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/static/style/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/static/style/students.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/templates/layouts/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/templates/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/templates/main/students.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../website/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/newform/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/static/script/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/newform/static/script/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/templates/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newform/templates/newform/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/newform/templates/newform/history.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +91,20 @@
       <workItem from="1689606051921" duration="3329000" />
       <workItem from="1689776737678" duration="5904000" />
       <workItem from="1693233104221" duration="357000" />
-      <workItem from="1693233500207" duration="116000" />
+      <workItem from="1693233500207" duration="985000" />
+      <workItem from="1693494640055" duration="1796000" />
+      <workItem from="1694189071962" duration="522000" />
+      <workItem from="1698583258403" duration="847000" />
+      <workItem from="1698585877480" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="last_one">
+      <created>1693233651644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693233651644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +120,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last_one" />
+    <option name="LAST_COMMIT_MESSAGE" value="last_one" />
   </component>
 </project>
