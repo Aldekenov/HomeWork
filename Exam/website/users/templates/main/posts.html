@@ -35,11 +35,11 @@
         {% if user.is_authenticated %}
             <div class="com" style="text-align: center">
                 <p style="text-align: left; margin-left: 20px">Добавить комментарии</p>
-                <form id="form" method="POST" action="">
+                <form id="form" method="POST" action="/comments/">
                     {% csrf_token %}
                     <textarea name="text" cols="40" rows="10" maxlength="100" required="" id="id_text"></textarea>
-                    <input type="hidden" name="post" value="{{ post.id }}">
-                    <input type="hidden" name="user" value="{{ user.id }}">
+                    <input type="hidden" name="post_id" value="{{ post.id }}">
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
                     <input type="submit" id="submit-button" value="ОТПРАВИТЬ">
                 </form>
             </div>

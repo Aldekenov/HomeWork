@@ -1,0 +1,37 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <div style="text-align: center">
+        <div id='news'>
+            {% for pu in pub %}
+                <div id="pub-box">
+                    <div id="img">
+                        <a href="{% url 'posts_detail' pu.id %}"><img src="/media/{{ pu.img }}" /></a>
+                    </div>
+                    <div id="pub-title">
+                            <a href="{% url 'posts_detail' pu.id %}">{{ pu.title }}</a>
+                    </div>
+                    <div id="pub-text">
+                        {{ pu.text }}
+                    </div>
+                    <div id="pub-info">
+                        <span style="text-align: left">{{ pu.user }}</span>
+                        <span style="text-align: right">{{ pu.published }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+            <div id="pub-box" style="justify-items: center; align-content: center">
+                    <span class="post-text">
+                        {% if user.is_authenticated %}
+                            <a href="/create"><span class="plus">&#10010;</span></a>
+                            <p>СОЗДАТЬ ПОСТ</p>
+                        {% else %}
+                            <a href="user/login"><span class="plus">&#10010;</span></a>
+                            <p>СОЗДАТЬ ПОСТ</p>
+                        {% endif %}
+                    </span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
