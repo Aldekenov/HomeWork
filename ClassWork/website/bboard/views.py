@@ -5,6 +5,10 @@ from django.template import loader
 from bboard.models import *
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
+from django.views.generic.edit import CreateView
+from django.views.generic import DetailView
+from bboard.forms import CommentForm, PostForm
+from django.urls import reverse_lazy
 
 def index(request):
     template = loader.get_template('main/index.html')
@@ -14,6 +18,11 @@ def index(request):
 
 def students(request):
     template = loader.get_template('main/students.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def create(request):
+    template = loader.get_template('main/create.html')
     context = {}
     return HttpResponse(template.render(context, request))
 
@@ -27,5 +36,7 @@ def posts(request, post_id):
     template = loader.get_template('main/posts.html')
     post = get_object_or_404(Post, id=post_id)
     comments = Comment.objects.filter(post_id=post_id).order_by('-id')
-    context = {'post':post, 'comments':comments}
+    form = CommentForm()
+    form_post = PostForm()
+    context = {'post':post, 'comments':comments, 'form': form, 'form_post':form_post}
     return HttpResponse(template.render(context, request))

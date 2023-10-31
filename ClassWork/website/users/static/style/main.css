@@ -75,6 +75,7 @@ a {
 #main {
     padding-bottom: 250px;
     font-family: 'Roboto', sans-serif;
+    z-index: 2;
 }
 
 body {
@@ -156,6 +157,7 @@ footer a {
     border-radius: 5px;
     font-size: 14px;
     visibility: hidden;
+    z-index: 160;
 }
 #user-menu p {
     margin: 0;

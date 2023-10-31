@@ -1,0 +1,13 @@
+{% extends 'layouts/main.html' %}
+{% block content %}
+    {% load static %}
+    <script src="{% static 'script/create.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style/create.css' %}">
+    <div>
+        <form id="form" method="POST" action="">
+            {% csrf_token %}
+            {{form_post.as_p}}
+            <input type="submit" id="submit-button" value="ОТПРАВИТЬ">
+        </form>
+    </div>
+{% endblock %}

@@ -10,6 +10,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import serializers
+from bboard.templatetags.custom_tags import censor
 
 def login_view(request):
     if request.POST:
@@ -67,3 +68,10 @@ class NotBannedProfilesList(APIView):
         profiles = Profile.objects.filter(is_banned=False)
         serializer = ProfileSerializer(profiles, many=True)
         return Response(serializer.data)
+
+def profile(request, profile_id):
+    template = loader.get_template('main/index.html')
+    profile = get_object_or_404(Post, id=profile_id)
+    prof = Profile.objects.filter(profile_id=profile_id).order_by('-id')
+    context = {'profile':profile, 'prof':prof}
+    return HttpResponse(template.render(context, request))
