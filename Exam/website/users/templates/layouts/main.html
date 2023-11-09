@@ -15,6 +15,30 @@
 </head>
 <body>
 <div id='page'>
+    <div id="slip-menu">
+        <span>
+            <img style="width: 50px" src="/media/logo.png">
+            <div id='logo-text'>
+                <h1>STEP</h1><br>
+                <p>IT ACADEMY</p>
+            </div>
+        </span>
+        <ul>
+            <li style="color: #96a8ff">ITSTEP</li>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'students' %}">Ученики</a></li>
+            <li>Достижения</li>
+            <li>Форма</li>
+            <li>Контакты</li>
+        </ul>
+        <div id="admin-button-sticky" style="color: white">
+            {% if user.is_authenticated %}
+                        {{ user }}
+            {% else %}
+                <p><a href="{% url 'login' %}">ВОЙТИ</a></p>
+            {% endif %}
+        </div>
+    </div>
     <menu>
         <ul>
             <li style="color: #96a8ff">ITSTEP</li>

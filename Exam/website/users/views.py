@@ -72,7 +72,8 @@ class NotBannedProfilesList(APIView):
         return Response(serializer.data)
 
 def profile(request):
+    user_id = request.user.id
     template = loader.get_template('main/index.html')
-    pro = Profile.objects.get(pk=id)
-    context = {'pro':pro}
+    profile = Profile.objects.get(user_id=user_id)
+    context = {'profile': profile}
     return HttpResponse(template.render(context, request))
