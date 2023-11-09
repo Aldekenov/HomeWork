@@ -13,7 +13,7 @@ class CommentAdmin(admin.ModelAdmin):
 
 admin.site.register(Comment, CommentAdmin)
 
-class ProdileAdmin(admin.ModelAdmin):
+class ProfileAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Profile, ProdileAdmin)
+admin.site.register(Profile, ProfileAdmin)

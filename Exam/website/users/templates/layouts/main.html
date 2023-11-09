@@ -39,23 +39,22 @@
         </div>
         <div id="admin-button">
             {% if user.is_authenticated %}
-                {% for pro in prof %}
-                    {{ pro.img }}
-                {% endfor %}
-                    {{ user }}
+                <div id="login-plus">
+                    {% for pro in prof %}
+                        <img src="{{ pro.img }}">
+                    {% endfor %}
+                        {{ user }}
+                </div>
             {% else %}
                 <p><a href="{% url 'login' %}">ВОЙТИ</a></p>
             {% endif %}
-
         </div>
-
-    <div id="user-menu">
-        <p>Мой аккаунт</p>
-        <p>Мои задания</p>
-        <p>Настройки</p>
-        <a href="{% url 'logout' %}" style="color: black"><p>Выйти</p></a>
-    </div>
-
+        <div id="user-menu">
+            <p>Мой аккаунт</p>
+            <p>Мои задания</p>
+            <p>Настройки</p>
+            <a href="{% url 'logout' %}" style="color: black"><p>Выйти</p></a>
+        </div>
     </div>
     <main id='main'>
 

@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import serializers
 from bboard.templatetags.custom_tags import censor
+from django.shortcuts import redirect
 
 def login_view(request):
     if request.POST:
@@ -19,9 +20,10 @@ def login_view(request):
 
         user = authenticate(request, username=username, password=password)
 
+
         if user is not None:
             login(request, user)
-            return render(request, 'users/login.html', {})
+            return redirect('index')
         else:
             return HttpResponse('Login error')
     else:
@@ -46,7 +48,7 @@ def auth_view(request):
 
 def logout_view(request):
     logout(request)
-    return render(request, 'users/login.html', {})
+    return redirect('index')
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -69,9 +71,8 @@ class NotBannedProfilesList(APIView):
         serializer = ProfileSerializer(profiles, many=True)
         return Response(serializer.data)
 
-def profile(request, profile_id):
+def profile(request):
     template = loader.get_template('main/index.html')
-    profile = get_object_or_404(Post, id=profile_id)
-    prof = Profile.objects.filter(profile_id=profile_id).order_by('-id')
-    context = {'profile':profile, 'prof':prof}
+    pro = Profile.objects.get(pk=id)
+    context = {'pro':pro}
     return HttpResponse(template.render(context, request))
