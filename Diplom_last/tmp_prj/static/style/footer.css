@@ -1,0 +1,8 @@
+.foot {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+    margin: 0 5px 0 5px;
+}

@@ -1,0 +1,76 @@
+{% load static %}
+<script src="{% static 'script/header.js' %}"></script>
+
+<!-- Sticky navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed" style="z-index: 15; visibility: hidden; position: absolute; top: -100px; margin-top: -56px">
+    <div class="container-fluid">
+        <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo" style="width: 40px;">
+        <a class="navbar-brand" href="/">Ping Rests</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'main' %}">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Ratings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Reserve</a>
+                    </li>
+                </ul>
+                    <span class="navbar-text scroll-top" style="margin-right: 50px">
+                        <a class="nav-link" aria-disabled="true" href="#" onClick="scroll(0,0); return false">🠕 scroll top</a>
+                    </span>
+            </div>
+    </div>
+</nav>
+
+<!-- Top navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: 10px; z-index: 15">
+    <div class="container-fluid">
+        <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo" style="width: 40px;">
+        <a class="navbar-brand" href="/">Ping Rests</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'main' %}">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Ratings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Reserve</a>
+                    </li>
+                </ul>
+                {% if user.is_authenticated %}
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ user.email }}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                                <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                            </ul>
+                        </div>
+                    </span>
+                {% else %}
+                    <span class="navbar-text">
+                        <a class="nav-link" aria-disabled="true" href="{% url 'login' %}">Login</a>
+                    </span>
+                {% endif %}
+            </div>
+    </div>
+</nav>

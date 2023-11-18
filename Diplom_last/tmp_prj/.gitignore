@@ -1,0 +1,8 @@
+.venv
+.python-version
+.vscode
+__pycache__
+.env
+staticfiles
+media
+.idea
